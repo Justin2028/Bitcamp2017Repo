@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:text="Easy"
             android:checked="true"
+            android:onClick="setDifficulty(easy)"
             />
         <RadioButton
             android:id="@+id/radioMedium"
@@ -50,5 +51,18 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="87dp"
         android:id="@+id/textView2" />
+
+    <Button
+        android:text="PLAY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioDiff"
+        android:layout_toRightOf="@+id/radioDiff"
+        android:layout_toEndOf="@+id/radioDiff"
+        android:layout_marginLeft="14dp"
+        android:onClick="goToGame"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="29dp"
+        android:id="@+id/PlayButton" />
 
 </RelativeLayout>

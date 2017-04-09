@@ -12,7 +12,7 @@ public class Data {
         EASY,
         MEDIUM,
         HARD;
-        private DIFF difficulty;
+        public static DIFF difficulty;
 
         public void setDifficulty(DIFF d) {
             difficulty = d;

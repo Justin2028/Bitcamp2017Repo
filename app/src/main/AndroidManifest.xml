@@ -23,7 +23,12 @@
             android:name=".InitialsActivity"
             android:label="@string/title_activity_initials"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DifficultySelect"></activity>
+        <activity android:name=".DifficultySelect" />
+        <activity android:name=".GameActivity" />
+        <activity
+            android:name=".DeathScreen"
+            android:label="@string/title_activity_death_screen"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
