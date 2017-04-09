@@ -1,12 +1,15 @@
 package com.ateam.floppycopter;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class InitialsActivity extends AppCompatActivity {
 
@@ -17,17 +20,17 @@ public class InitialsActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 
     public void goToDifficulty(View view) {
-        startActivity(new Intent(this, DifficultySelect.class));
+        EditText et = (EditText) findViewById(R.id.editText);
+        String ini = et.getText().toString();
+        if(ini.equals("")){
+            Toast t = Toast.makeText(this, "Please enter your initials", Toast.LENGTH_SHORT);
+            t.show();
+        }
+        else {
+            startActivity(new Intent(this, DifficultySelect.class));
+        }
     }
 }
