@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">Floppy Copter</string>
-
     <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_initials">InitialsActivity</string>
     <string name="title_activity_death_screen">DeathScreen</string>
     <string name="death_message">Mission failed, we\'ll get \'em next time</string>

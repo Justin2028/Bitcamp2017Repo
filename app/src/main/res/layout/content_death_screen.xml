@@ -20,7 +20,8 @@
         android:gravity="center"
         android:background="#00000000"
         android:onClick="goToTitle"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        android:layout_above="@+id/scores_list" />
 
     <TextView
         android:id="@+id/textView3"
@@ -34,9 +35,10 @@
         android:textSize="30pt" />
 
     <ListView
+        android:id="@+id/scores_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
