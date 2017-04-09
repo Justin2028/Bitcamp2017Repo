@@ -30,6 +30,7 @@ public class InitialsActivity extends AppCompatActivity {
             t.show();
         }
         else {
+            Data.currPlayer = ini.substring(0,2);
             startActivity(new Intent(this, DifficultySelect.class));
         }
     }

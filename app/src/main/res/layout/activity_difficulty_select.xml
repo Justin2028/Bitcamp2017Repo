@@ -6,8 +6,49 @@
     android:layout_height="match_parent"
     tools:context="com.ateam.floppycopter.DifficultySelect">
 
-
-    <RadioButton
+    <TextView
+        android:text="TextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/radioDiff"
+        android:layout_alignEnd="@+id/radioDiff"
+        android:id="@+id/textView" />
+
+    <RadioGroup
+        android:id="@+id/radioDiff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:id="@+id/radioEasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/radioMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            />
+        <RadioButton
+            android:id="@+id/radioHard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hard"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:text="Select your desired difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioDiff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="87dp"
+        android:id="@+id/textView2" />
+
 </RelativeLayout>
